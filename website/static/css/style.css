@@ -1,0 +1,83 @@
+/*导航条默认属性*/
+.navbar-default{
+    margin-bottom: 0px;
+    border: 0px;
+    background-color: #e7e7e7;
+}
+/*导航栏栏目激活时属性*/
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:hover
+.navbar-default .navbar-nav .active a:focus{
+    background-color: #005197;
+    color: #ffffff;
+}
+
+/*一级菜单光标移过时属性*/
+.navbar-default .navbar-nav li a:hover{
+    color: #ffffff;
+    background-color: #005197;
+}
+/*一级菜单单击展开时属性*/
+.navbar-default .navbar-nav li .open a.on{
+    color: #ffffff;
+    background-color: #005197;
+}
+/*下拉菜单*/
+.dropdown-menu{
+    min-width: 118px;
+    padding: 0px;
+
+}
+/*二级菜单*/
+.dropdown-menu li a{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #777;
+    text-align: center;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.navbar-nav {
+    display: flex;
+    width: 100%;
+}
+.nav-top{
+    text-align: center;
+    width: 14%;
+    flex:1;
+    white-space: nowrap;
+}
+
+.line{
+    height: 3px;
+    width: 100%;
+    background-color: #005197;
+}
+
+.model-details-title{
+    padding: 15px 0;
+    font-size: 24px;
+    border-bottom: 1px #005197 solid;
+    margin-bottom: 10px;
+    color: #005197;
+}
+.model-details p{
+    line-height: 30px;
+    text-indent: 2em;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+.model-details img{
+    margin: 0px auto;
+}
+.model-details h3{
+    color: #005197;
+    font-size: 20px;
+}
+.model-details h5{
+    font-size: 15px;
+    color: #005197;
+}
+

@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type">
+    <title>{% block title %}
+
+    {% endblock %}</title>
+    <!-- <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{#导航条#}
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example"
+                    aria-expanded="false">
+                <span>导航条</span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example">
+            <ul class="nav navbar-nav">
+                <li class="active nav-top">
+                    <a href="">首页</a>
+                </li>
+                <li class="dropdown nav-top">
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">公司简介</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">企业概况</a></li>
+                        <li><a href="#">荣誉资质</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-top">
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">新闻动态</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">公司要闻</a></li>
+                        <li><a href="#">行业新闻</a></li>
+                        <li><a href="#">通知公告</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-top">
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">产品中心</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">家用机器人</a></li>
+                        <li><a href="#">智能门锁</a></li>
+                        <li><a href="#">人脸识别项目</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-top">
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">服务支持</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">企业概况</a></li>
+                        <li><a href="#">荣誉资质</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-top">
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">公司简介</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">资料下载</a></li>
+                        <li><a href="#">人脸识别开放平台</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown nav-top">
+                    <a href="">科研基地</a>
+                </li>
+                <li class="dropdown nav-top">
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">人才招聘</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">加入恒达</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="line"></div>
+
+{% block content %}
+
+{% endblock %}
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<!-- <script src="{% static 'bootstrap/js/jquery.min.js' %}"></script> -->
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<!-- <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(function () {
+        $(".dropdown").mouseover(function () {
+            $(this).addClass("open")
+        });
+    });
+    $(".dropdown").mouseleave(function () {
+        $(this).removeClass("open");
+    });
+</script>
+</html>
